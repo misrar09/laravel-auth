@@ -27,7 +27,8 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        //
+
+        return view("admin.articles.create");
     }
 
     /**
@@ -35,7 +36,12 @@ class ArticleController extends Controller
      */
     public function store(StoreArticleRequest $request)
     {
-        //
+        $validated = $request->validated();
+        $newArticle = new Article();
+        $newArticle->fill($validated);
+        $newArticle->save();
+
+        return redirect()->route("admin.articles.index");
     }
 
     /**
