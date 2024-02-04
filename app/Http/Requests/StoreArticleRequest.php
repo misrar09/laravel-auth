@@ -24,7 +24,7 @@ class StoreArticleRequest extends FormRequest
         return [
             'title' => ["required", "min:5", "max:100"],
             'description' => ["required", "min:5", "max:500"],
-            'conclustion' => ["required", "min:5", "max:500"]
+            'conclusion' => ["required", "min:5", "max:500"]
         ];
     }
 }

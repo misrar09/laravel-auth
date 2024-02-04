@@ -34,9 +34,9 @@
                         placeholder="Insert Descriptoin" name= "description" value="{{ old('description') }}">
                 </div>
                 <div class="mb-3">
-                    <label for="conclustion" class="form-label">Conslusion</label>
-                    <input type="text" class="form-control @error('conclustion') is-invalid @enderror" id="conclustion"
-                        placeholder="Insert Conslution" name= "conclustion" value="{{ old('conclustion') }}">
+                    <label for="conclusion" class="form-label">Conslusion</label>
+                    <input type="text" class="form-control @error('conclusion') is-invalid @enderror" id="conclusion"
+                        placeholder="Insert Conslution" name= "conclusion" value="{{ old('conclusion') }}">
                 </div>
                 <button type="submit" class="btn btn-primary">Insert</button>
             </form>
